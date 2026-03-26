@@ -41,7 +41,9 @@ export const metadata: Metadata = {
     description: 'Calculate gold value by weight instantly',
     images: ['/og-image.png'],
   },
-  canonical: metadataBase.toString(),
+  alternates: {
+    canonical: metadataBase.toString(),
+  },
   robots: {
     index: true,
     follow: true,
