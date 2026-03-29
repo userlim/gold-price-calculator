@@ -484,7 +484,7 @@ export default function Calculator() {
             onChange={(e) => setKarat(parseInt(e.target.value) as 24 | 22 | 18 | 14 | 10)}
             className="tool-input"
           >
-            {(Object.entries(KARATS) as [24 | 22 | 18 | 14 | 10, typeof KARATS[24]][]).map(
+            {(Object.entries(KARATS) as unknown as [string, { purity: number; name: string }][]).map(
               ([key, val]) => (
                 <option key={key} value={key}>
                   {val.name} ({val.purity}%)
@@ -573,7 +573,7 @@ export default function Calculator() {
               </tr>
             </thead>
             <tbody>
-              {(Object.entries(KARATS) as [24 | 22 | 18 | 14 | 10, typeof KARATS[24]][]).map(
+              {(Object.entries(KARATS) as unknown as [string, { purity: number; name: string }][]).map(
                 ([key, val]) => (
                   <tr
                     key={key}
