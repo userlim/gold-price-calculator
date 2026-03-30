@@ -119,6 +119,14 @@ export default function RootLayout({
                 </p>
               </div>
             </div>
+            <div className="flex flex-wrap justify-center gap-6 mb-6 text-sm">
+              <a href="/privacy-policy" className="text-blue-600 hover:text-blue-800">
+                Privacy Policy
+              </a>
+              <a href="/terms" className="text-blue-600 hover:text-blue-800">
+                Terms of Service
+              </a>
+            </div>
             <div className="border-t border-card-border pt-6 text-center">
               <p className="text-sm text-text-muted">
                 © 2026 Gold Price Calculator. All rights reserved.
