@@ -70,6 +70,7 @@ export default function RootLayout({
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="google-site-verification" content="hsjncRi9cl3tz3Otd6SJKurSt_V1bZ0AKO-bdWIGeHM" />
         <meta name="google-adsense-account" content="ca-pub-4361110443201092" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4361110443201092" crossOrigin="anonymous"></script>
         <meta name="theme-color" content="#7c5cbf" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
