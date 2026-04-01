@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-const metadataBase = new URL('https://gold-price-calculator.vercel.app');
+const metadataBase = new URL('https://gold-price-today-calculator.vercel.app');
 
 export const metadata: Metadata = {
   metadataBase,

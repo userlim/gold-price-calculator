@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: [],
     },
-    sitemap: 'https://gold-price-calculator.vercel.app/sitemap.xml',
+    sitemap: 'https://gold-price-today-calculator.vercel.app/sitemap.xml',
   };
 }
