@@ -77,7 +77,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/favicon.svg" />
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-P08T3SZDQH"
+          src="https://www.googletagmanager.com/gtag/js?id=G-P04TH8XJJ9"
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -85,7 +85,7 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-P08T3SZDQH');
+              gtag('config', 'G-P04TH8XJJ9');
             `,
           }}
         />
