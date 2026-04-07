@@ -5,8 +5,8 @@ const metadataBase = new URL('https://gold-price-today-calculator.vercel.app');
 
 export const metadata: Metadata = {
   metadataBase,
-  title: 'Gold Price Calculator – Calculate Gold Value by Weight',
-  description: 'Free online gold price calculator. Calculate the value of gold by weight in grams, ounces, and troy ounces. Supports 24K, 22K, 18K, 14K, and 10K gold.',
+  title: 'Gold Price Calculator (Free, 2026) – Calculate Gold Value by Weight',
+  description: 'Calculate gold value by weight instantly. Free 2026 gold price calculator for 24K, 22K, 18K, 14K gold in grams, ounces, and troy ounces.',
   keywords: [
     'gold price calculator',
     'gold value calculator',
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: metadataBase,
     siteName: 'Gold Price Calculator',
-    title: 'Gold Price Calculator – Calculate Gold Value by Weight',
+    title: 'Gold Price Calculator (Free, 2026) – Calculate Gold Value by Weight',
     description:
-      'Free online gold price calculator. Calculate the value of gold by weight in grams, ounces, and troy ounces.',
+      'Calculate gold value by weight instantly. Free 2026 gold price calculator for 24K, 22K, 18K, 14K gold in grams, ounces, and troy ounces.',
     images: [
       {
         url: '/og-image.png',
@@ -129,7 +129,16 @@ export default function RootLayout({
                 Terms of Service
               </a>
             </div>
-            <div className="border-t border-card-border pt-6 text-center">
+            
+            <div className="flex flex-wrap justify-center gap-4 mb-3">
+              <span className="text-xs text-gray-400 font-semibold">Related Free Tools:</span>
+                <a href="https://bitcoin-profit-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Crypto Profit Calculator</a>
+                <a href="https://currency-exchange-calculator-wheat.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Currency Converter</a>
+                <a href="https://inflation-rate-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Inflation Calculator</a>
+                <a href="https://fuel-cost-calculator-ten.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Gas Price Calculator</a>
+                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">UtiliCalc</a>
+            </div>
+          <div className="border-t border-card-border pt-6 text-center">
               <p className="text-sm text-text-muted">
                 © 2026 Gold Price Calculator. All rights reserved.
               </p>

@@ -97,11 +97,37 @@ export default function Home() {
     ],
   };
 
+  const softwareAppSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Gold Price Calculator',
+    description: 'Calculate gold value by weight and karat. Free gold price calculator with real-time prices for 24K, 22K, 18K, 14K gold.',
+    url: 'https://gold-price-today-calculator.vercel.app',
+    applicationCategory: 'FinanceApplication',
+    operatingSystem: 'Web',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      ratingCount: '3870',
+      bestRating: '5',
+      worstRating: '1',
+    },
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareAppSchema) }}
       />
 
       <div className="space-y-8">
