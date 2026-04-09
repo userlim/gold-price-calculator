@@ -2,9 +2,8 @@ import type { Metadata } from 'next';
 import Calculator from './calculator';
 
 export const metadata: Metadata = {
-  title: 'Gold Price Calculator – Calculate Gold Value by Weight',
-  description:
-    'Free online gold price calculator. Calculate the value of gold by weight in grams, ounces, and troy ounces. Supports 24K, 22K, 18K, 14K, and 10K gold.',
+  title: 'Free Gold Price Calculator (2026) – Value by Karat & Weight, Live Rates',
+  description: 'Calculate gold value by weight and karat instantly. Supports 24K, 18K, 14K gold in grams and ounces. Free tool with live market prices — no signup required.',
   keywords: [
     'gold price calculator',
     'gold value calculator',
