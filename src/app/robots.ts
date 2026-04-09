@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: [],
+      disallow: ['/api/'],
     },
     sitemap: 'https://gold-price-today-calculator.vercel.app/sitemap.xml',
   };
