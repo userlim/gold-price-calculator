@@ -577,7 +577,7 @@ export default function Calculator() {
                 ([key, val]) => (
                   <tr
                     key={key}
-                    className="border-b border-card-border hover:bg-gray-50 transition"
+                    className="border-b border-card-border hover:bg-white/[0.02] transition"
                   >
                     <td className="py-2 text-text">{val.name}</td>
                     <td className="py-2 text-accent font-semibold">{val.purity}%</td>

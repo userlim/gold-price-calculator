@@ -174,7 +174,7 @@ export default function Home() {
                 desc: 'Use on any device. Responsive design for phones and tablets',
               },
             ].map((feature, i) => (
-              <div key={i} className="card hover:shadow-lg transition-shadow">
+              <div key={i} className="card hover:shadow-lg shadow-black/20 transition-shadow">
                 <div className="text-3xl mb-2">{feature.icon}</div>
                 <h3 className="font-bold text-text mb-2">{feature.title}</h3>
                 <p className="text-sm text-text-muted">{feature.desc}</p>
@@ -251,7 +251,7 @@ export default function Home() {
         </section>
 
         {/* Disclaimer */}
-        <section className="card bg-yellow-50 border-2 border-yellow-200">
+        <section className="card bg-yellow-500/10 border-2 border-yellow-200">
           <h3 className="font-bold text-text mb-2">⚠️ Disclaimer</h3>
           <p className="text-sm text-text-muted">
             This calculator provides estimates for informational purposes only. Gold prices are
@@ -268,25 +268,42 @@ export default function Home() {
         
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-2">How Gold Pricing Works</h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Gold is priced in troy ounces on global commodity markets, with the London Bullion Market Association (LBMA) Gold Price serving as the primary benchmark. This price is set twice daily (10:30 AM and 3:00 PM London time) through an electronic auction process. The spot price represents the current market price for immediate delivery, while futures prices reflect expected future values.` }} />
+              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Gold is priced in troy ounces on global commodity markets, with the London Bullion Market Association (LBMA) Gold Price serving as the primary benchmark. This price is set twice daily (10:30 AM and 3:00 PM London time) through an electronic auction process. The spot price represents the current market price for immediate delivery, while futures prices reflect expected future values.` }} />
             </div>
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-2">Understanding Gold Purity (Karats)</h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Gold purity is measured in karats (K), with 24K being pure gold (99.9%+ purity). Common purities include: 22K (91.7% gold), commonly used in coins and high-end jewelry; 18K (75% gold), the most popular for fine jewelry balancing durability and value; 14K (58.3% gold), popular in the US for everyday jewelry; and 10K (41.7% gold), the minimum legal standard for gold in the US. Our calculator automatically adjusts the per-gram value based on karat selection.` }} />
+              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Gold purity is measured in karats (K), with 24K being pure gold (99.9%+ purity). Common purities include: 22K (91.7% gold), commonly used in coins and high-end jewelry; 18K (75% gold), the most popular for fine jewelry balancing durability and value; 14K (58.3% gold), popular in the US for everyday jewelry; and 10K (41.7% gold), the minimum legal standard for gold in the US. Our calculator automatically adjusts the per-gram value based on karat selection.` }} />
             </div>
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-2">Factors That Influence Gold Prices</h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Gold prices are driven by multiple interconnected factors: central bank monetary policy (lower interest rates typically increase gold prices), US dollar strength (gold and USD usually move inversely), inflation expectations (gold is traditionally an inflation hedge), geopolitical uncertainty (drives safe-haven demand), central bank gold purchases (a significant demand driver in 2024-2025), and jewelry/industrial demand.` }} />
+              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Gold prices are driven by multiple interconnected factors: central bank monetary policy (lower interest rates typically increase gold prices), US dollar strength (gold and USD usually move inversely), inflation expectations (gold is traditionally an inflation hedge), geopolitical uncertainty (drives safe-haven demand), central bank gold purchases (a significant demand driver in 2024-2025), and jewelry/industrial demand.` }} />
             </div>
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-2">Gold as an Investment: Key Considerations</h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Gold can be held as physical bullion (bars, coins), paper gold (ETFs like GLD, futures), or digital gold tokens. Physical gold offers direct ownership but involves storage and insurance costs. ETFs provide easy trading but involve management fees. Over the past 50 years, gold has averaged about 7-8% annual returns, roughly matching inflation. It's generally recommended as 5-15% of a diversified portfolio for hedging purposes.` }} />
+              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Gold can be held as physical bullion (bars, coins), paper gold (ETFs like GLD, futures), or digital gold tokens. Physical gold offers direct ownership but involves storage and insurance costs. ETFs provide easy trading but involve management fees. Over the past 50 years, gold has averaged about 7-8% annual returns, roughly matching inflation. It's generally recommended as 5-15% of a diversified portfolio for hedging purposes.` }} />
             </div>
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-2">How to Accurately Weigh and Value Gold</h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `When selling or buying gold, accurate measurement is crucial. Gold is traditionally weighed in troy ounces (31.1035 grams), not standard (avoirdupois) ounces (28.3495 grams). For smaller quantities, grams, pennyweights (dwt), or grains are used. Jewelry dealers typically weigh gold and then deduct for non-gold components (gemstones, clasps). Our calculator supports all common weight units for easy conversion.` }} />
+              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `When selling or buying gold, accurate measurement is crucial. Gold is traditionally weighed in troy ounces (31.1035 grams), not standard (avoirdupois) ounces (28.3495 grams). For smaller quantities, grams, pennyweights (dwt), or grains are used. Jewelry dealers typically weigh gold and then deduct for non-gold components (gemstones, clasps). Our calculator supports all common weight units for easy conversion.` }} />
             </div>
       </section>
-    </>
+    
+      {/* Keyword-Optimized Content */}
+      <section id="keyword-seo-section" className="mt-8 max-w-3xl mx-auto px-4">
+        <p className="text-sm text-gray-400 leading-relaxed">
+          Calculate the value of your gold with live spot prices. Our gold value calculator supports all karats — 10K, 14K, 18K, and 24K. Check today's gold price per gram, get gold investment calculations, and see the latest gold price forecast for 2026. Track gold spot price live.
+        </p>
+<div className="mt-3 flex flex-wrap gap-2">
+          <a href="https://bitcoin-profit-calculator.vercel.app" className="text-xs text-blue-400 hover:underline">Crypto Profit Calculator →</a>
+          <a href="https://currency-exchange-calculator-wheat.vercel.app" className="text-xs text-blue-400 hover:underline">Currency Converter →</a>
+          <a href="https://inflation-rate-calculator.vercel.app" className="text-xs text-blue-400 hover:underline">Inflation Calculator →</a>
+        </div>
+
+      </section>
+      </>
   );
+  other: {
+    'article:published_time': '2025-01-15T00:00:00Z',
+    'article:modified_time': '2026-04-10T00:00:00Z',
+  },
 }
