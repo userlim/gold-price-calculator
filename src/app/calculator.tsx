@@ -426,7 +426,7 @@ export default function Calculator() {
         <select
           value={language}
           onChange={(e) => setLanguage(e.target.value as Language)}
-          className="tool-input max-w-xs"
+          className="input max-w-xs"
         >
           {(Object.keys(LANGUAGE_NAMES) as Language[]).map((lang) => (
             <option key={lang} value={lang}>
@@ -448,7 +448,7 @@ export default function Calculator() {
             value={weight}
             onChange={(e) => setWeight(e.target.value)}
             placeholder="10"
-            className="tool-input"
+            className="input"
             min="0"
             step="0.1"
           />
@@ -462,7 +462,7 @@ export default function Calculator() {
           <select
             value={unit}
             onChange={(e) => setUnit(e.target.value as keyof typeof UNITS)}
-            className="tool-input"
+            className="input"
           >
             {(Object.entries(UNITS) as [keyof typeof UNITS, typeof UNITS[keyof typeof UNITS]][]).map(
               ([key, val]) => (
@@ -482,7 +482,7 @@ export default function Calculator() {
           <select
             value={karat}
             onChange={(e) => setKarat(parseInt(e.target.value) as 24 | 22 | 18 | 14 | 10)}
-            className="tool-input"
+            className="input"
           >
             {(Object.entries(KARATS) as unknown as [string, { purity: number; name: string }][]).map(
               ([key, val]) => (
@@ -504,7 +504,7 @@ export default function Calculator() {
             value={spotPrice}
             onChange={(e) => setSpotPrice(e.target.value)}
             placeholder="2960"
-            className="tool-input"
+            className="input"
             min="0"
             step="1"
           />
@@ -521,7 +521,7 @@ export default function Calculator() {
           <select
             value={currency}
             onChange={(e) => setCurrency(e.target.value as Currency)}
-            className="tool-input"
+            className="input"
           >
             {(Object.entries(CURRENCIES) as [Currency, typeof CURRENCIES[Currency]][]).map(
               ([key, val]) => (

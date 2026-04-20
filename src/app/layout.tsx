@@ -1,70 +1,38 @@
-import type { Metadata } from 'next';
-import './globals.css';
+import type { Metadata } from 'next'
+import './globals.css'
 import Script from 'next/script'
 
-const metadataBase = new URL('https://gold-price-today-calculator.vercel.app');
-
 export const metadata: Metadata = {
-  metadataBase,
   title: 'Gold Price Calculator (Free, 2026) – Calculate Gold Value by Weight',
   description: 'Calculate gold value by weight instantly. Free 2026 gold price calculator for 24K, 22K, 18K, 14K gold in grams, ounces, and troy ounces.',
-  keywords:
-    'gold price today, gold price calculator, gold price per gram, gold value calculator, gold karat calculator, 14k gold price, 18k gold price, gold scrap calculator, gold melt value, how much is my gold worth, 24k gold price per ounce, gold investment calculator, gold price forecast 2026, gold spot price live, gold price chart',
-  keywords: [
-    'gold price calculator',
-    'gold value calculator',
-    'gold weight calculator',
-    'gold per gram',
-    'gold price per ounce',
-    'troy ounce gold',
-    'karat calculator',
-  ],
-  authors: [{ name: 'Gold Price Calculator' }],
-  creator: 'Gold Price Calculator',
+  keywords: 'gold price today, gold price calculator, gold price per gram, gold value calculator, gold karat calculator, 14k gold price, 18k gold price, gold scrap calculator, gold melt value, how much is my gold worth, 24k gold price per ounce, gold investment calculator, gold price forecast 2026, gold spot price live, gold price chart',
+  metadataBase: new URL('https://gold-price-today-calculator.vercel.app'),
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: metadataBase,
-    siteName: 'Gold Price Calculator',
     title: 'Gold Price Calculator (Free, 2026) – Calculate Gold Value by Weight',
-    description:
-      'Calculate gold value by weight instantly. Free 2026 gold price calculator for 24K, 22K, 18K, 14K gold in grams, ounces, and troy ounces.',
-  keywords:
-    'gold price today, gold price calculator, gold price per gram, gold value calculator, gold karat calculator, 14k gold price, 18k gold price, gold scrap calculator, gold melt value, how much is my gold worth, 24k gold price per ounce, gold investment calculator, gold price forecast 2026, gold spot price live, gold price chart',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Gold Price Calculator',
-      },
-    ],
+    description: 'Calculate gold value by weight instantly. Free 2026 gold price calculator for 24K, 22K, 18K, 14K gold in grams, ounces, and troy ounces.',
+    url: 'https://gold-price-today-calculator.vercel.app',
+    siteName: 'Gold Price Calculator',
+    locale: 'en_US',
+    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Gold Price Calculator',
-    description: 'Calculate gold value by weight instantly',
-  keywords:
-    'gold price today, gold price calculator, gold price per gram, gold value calculator, gold karat calculator, 14k gold price, 18k gold price, gold scrap calculator, gold melt value, how much is my gold worth, 24k gold price per ounce, gold investment calculator, gold price forecast 2026, gold spot price live, gold price chart',
-    images: ['/og-image.png'],
+    description: 'Calculate gold value by weight instantly. Free 2026 gold price calculator for 24K, 22K, 18K, 14K gold in grams, ounces, and troy ounces.',
   },
+  robots: {
+    index: true,
+    follow: true,
+    'max-image-preview': 'large' as const,
+    'max-snippet': -1,
+    'max-video-preview': -1,
+  },
+  icons: { icon: '/favicon.svg' },
   alternates: {
     canonical: 'https://gold-price-today-calculator.vercel.app',
     languages: {
       'en': 'https://gold-price-today-calculator.vercel.app',
       'x-default': 'https://gold-price-today-calculator.vercel.app',
-    },
-  },
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-snippet': -1,
-      'max-image-preview': 'large',
-      'max-video-preview': -1,
     },
   },
 };
@@ -157,12 +125,12 @@ export default function RootLayout({
             </div>
             
             <div className="flex flex-wrap justify-center gap-4 mb-3">
-              <span className="text-xs text-gray-500 font-semibold uppercase tracking-wider">Related Free Tools:</span>
-                <a href="https://bitcoin-profit-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Crypto Profit Calculator</a>
-                <a href="https://currency-exchange-calculator-wheat.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Currency Exchange Converter</a>
-                <a href="https://inflation-rate-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Inflation Rate Calculator</a>
-                <a href="https://fuel-cost-calculator-ten.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Fuel Cost Calculator</a>
-                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">UtiliCalc All-in-One Tools</a>
+              <span className="text-xs text-[var(--text-secondary)] font-semibold uppercase tracking-wider">Related Free Tools:</span>
+                <a href="https://bitcoin-profit-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Crypto Profit Calculator</a>
+                <a href="https://currency-exchange-calculator-wheat.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Currency Exchange Converter</a>
+                <a href="https://inflation-rate-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Inflation Rate Calculator</a>
+                <a href="https://fuel-cost-calculator-ten.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Fuel Cost Calculator</a>
+                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">UtiliCalc All-in-One Tools</a>
             </div>
           <div className="border-t border-card-border pt-6 text-center">
               <p className="text-sm text-text-muted">
